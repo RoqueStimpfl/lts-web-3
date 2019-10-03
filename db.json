@@ -2,7 +2,25 @@
   "locations": [
     {
       "id": 1,
-      "name": "Pietro"
+      "name":  "Pietro",
+      "owner": {
+        "id": 12321313,
+        "fullname": "Marco Rossi"
+      },
+      "descriptions": {
+        "de": {
+          "short": "ciao de",
+          "long": "wow de"
+        },
+        "it": {
+          "short": "ciao it",
+          "long": "wow it"
+        },
+        "en": {
+          "short": "ciao en",
+          "long": "wow en"
+        }
+      }
     }
   ]
 }
