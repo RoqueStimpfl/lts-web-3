@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "locations": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "owner": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "fullname": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "fullname"
+              ]
+            },
+            "descriptions": {
+              "type": "object",
+              "properties": {
+                "de": {
+                  "type": "object",
+                  "properties": {
+                    "short": {
+                      "type": "string"
+                    },
+                    "long": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "short",
+                    "long"
+                  ]
+                },
+                "it": {
+                  "type": "object",
+                  "properties": {
+                    "short": {
+                      "type": "string"
+                    },
+                    "long": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "short",
+                    "long"
+                  ]
+                },
+                "en": {
+                  "type": "object",
+                  "properties": {
+                    "short": {
+                      "type": "string"
+                    },
+                    "long": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "short",
+                    "long"
+                  ]
+                }
+              },
+              "required": [
+                "de",
+                "it",
+                "en"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "owner",
+            "descriptions"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "locations"
+  ]
+}
